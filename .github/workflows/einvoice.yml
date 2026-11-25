@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate invoices offline
         id: check
-        uses: wsystemdev/einvoice-validate-action@v0
+        uses: wsystemdev/einvoice-validate-action@v1.1.0
         with:
+          mode: local
           files: |
             invoices/**/*.xml
             invoices/**/*.pdf
